@@ -1,0 +1,8 @@
+{
+  "company_name": "Company_B",
+  "invoice_path": "company_B/invoice_lines.csv",
+  "fx_rates_path": "company_B/fx_rates_usd.csv",
+  "classification_path": "company_B/classification.csv",
+  "taxonomy_path": "company_B/taxonomy_B.csv",
+  "output_path": "submission/aditi_B.csv"
+}

@@ -1,0 +1,51 @@
+{
+  "company_name": "Company A",
+  "reporting_currency": "ZAR",
+  "taxonomy_file": "taxonomy_A.csv",
+  "fx_file": "",
+  "seed_labels_file": "labels_A.csv",
+  "sources": [
+    {
+      "id_prefix": "ERP",
+      "file_path": "erp_goods_receipts.csv",
+      "id_col": "line_id",
+      "amount_col": "value_zar",
+      "amount_basis": "net",
+      "vat_col": null,
+      "default_vat": 0.15,
+      "currency_col": "document_currency",
+      "currency_rate_col": null,
+      "date_col": "posting_date",
+      "supplier_col": "vendor_id",
+      "supplier_name_col": "vendor_name",
+      "description_cols": ["material_short_text", "service_short_text"],
+      "po_col": "po_number",
+      "invoice_col": null,
+      "status_col": null,
+      "approved_statuses": [],
+      "cancelled_statuses": []
+    },
+    {
+      "id_prefix": "TOOL",
+      "file_path": "invoice_tool_export.csv",
+      "id_col": "tool_record_id",
+      "amount_col": "gross_amount",
+      "amount_basis": "gross",
+      "vat_col": "vat_rate",
+      "default_vat": 0.15,
+      "currency_col": "currency",
+      "currency_rate_col": null,
+      "date_col": "invoice_date",
+      "supplier_col": null,
+      "supplier_name_col": "supplier_name",
+      "description_cols": ["line_text"],
+      "po_col": "po_reference",
+      "invoice_col": "invoice_number",
+      "status_col": "status",
+      "approved_statuses": ["Approved", "Paid"],
+      "cancelled_statuses": ["Cancelled", "Rejected", "On Hold", "Submitted", "Disputed"]
+    }
+  ],
+  "exclusion_keywords": ["tax", "vat", "intercompany", "royalty", "interest", "revenue", "dividend", "financing"],
+  "primary_source_prefix": "ERP"
+}
