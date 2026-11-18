@@ -1,6 +1,6 @@
 # Cantill Spend Data Pipeline & Classifier
 
-A robust, config-driven data processing, currency normalization, de-duplication, and hierarchical classification pipeline built for enterprise procurement spend analytics[cite: 7, 8]. Designed to ingest multi-source ERP and accounts-payable invoice data, resolve cross-system duplicates, filter non-addressable spend, and map line items to company-specific category trees[cite: 7, 8].
+A robust, config-driven data processing, currency normalization, de-duplication, and hierarchical classification pipeline built for enterprise procurement spend analytics. Designed to ingest multi-source ERP and accounts-payable invoice data, resolve cross-system duplicates, filter non-addressable spend, and map line items to company-specific category trees.
 
 ---
 
