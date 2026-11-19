@@ -1,0 +1,26 @@
+{
+  "company_name": "Company_C",
+  "reporting_currency": "USD",
+  "invoice_path": "C/invoice_lines.csv",
+  "taxonomy_path": "C/category_tree_C.csv",
+  "output_path": "submission/aditi__C.csv",
+  "sources": [
+    {
+      "file_path": "invoice_lines.csv",
+      "id_prefix": "C",
+      "id_col": "line_id",
+      "date_col": "invoice_date",
+      "currency_col": "currency",
+      "supplier_name_col": "supplier_name",
+      "supplier_col": "supplier_name",
+      "description_cols": [
+        "line_description",
+        "invoice_description",
+        "product_service_description",
+        "product_service_code",
+        "gl_account_description"
+      ],
+      "amount_col": "line_amount_usd"
+    }
+  ]
+}
